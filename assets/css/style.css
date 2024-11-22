@@ -1,0 +1,685 @@
+@font-face {
+    font-family: 'Shlop';
+    src: url(/assets/fonts/shlop\ rg.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+body{
+    background-color:black;
+    height: 100vh;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+.logo img{
+    max-width: 50%; 
+    height: auto;
+}
+
+
+.logo{
+    max-width: 15%; 
+    height: auto; 
+}
+
+header > .interface
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a
+{
+    color:gray;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav ul 
+{
+    list-style-type: none;
+}
+
+header a:hover
+{
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav li 
+{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+ .btn-contato button
+{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: red;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    font-family: 'Shlop', sans-serif;
+
+}
+
+h2.titulo
+{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span
+{
+    color: red;
+
+}
+
+ button:hover, form .btn-enviar input:hover
+{
+    box-shadow: 0px 0px 8px rgb(144, 7, 7);
+    transform: scale(1.05);
+}
+
+/*main*/
+.img-topo-site img {
+    max-width: 450px; 
+    height: auto; 
+    margin: 10px; 
+}
+
+section.topo-do-site
+{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex
+{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1
+{
+    font-family: 'Shlop', sans-serif;
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span 
+{
+    color: red;
+}
+
+.topo-do-site .txt-topo-site p 
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 40px 0px;
+    font-size: 26px;
+}
+
+.topo-do-site .img-topo-site img
+{
+    position: relative;
+    animation: floating 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes floating 
+{
+    0%
+    {
+        top: 0;
+    }
+
+    100%
+    {
+        top: 30px;
+    }
+}
+
+/*QUEM SOU EU*/
+
+section.Especialidades
+{
+    padding: 40px 4%;
+
+}
+
+section.Especialidades .flex 
+{
+    gap: 60px;
+}
+
+.Especialidades .especialidades-box
+{
+    color: white;
+    padding: 40px;
+    border: 2px solid #ffffff56;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+
+.Especialidades .especialidades-box:hover 
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #fff;
+}
+
+.Especialidades .especialidades-box i
+{
+    font-size: 70px;
+    color: red;
+}
+
+.Especialidades .especialidades-box h3
+{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+/*SOBRE*/
+
+section.sobre
+{
+    padding: 80px 4%;
+    
+}
+
+section.sobre .flex 
+{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2 
+{
+    font-family: 'Schlop', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span
+{
+    color: red;
+    display: block;
+}
+.sobre .txt-sobre
+{
+    color: #fff
+
+
+}
+
+.sobre .img-sobre img
+{
+    max-width: 300px; 
+    margin-top: 20px;
+    height: auto; 
+    margin-left: 23px;
+    
+}
+
+.sobre .txt-sobre p
+{
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn-social button
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+section.formulario
+{
+    padding: 80px 4%;
+
+}
+
+form
+{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea
+{
+    width: 100%;
+    background-color: rgb(50, 44, 44);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+ 
+form textarea
+{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+form .btn-enviar input 
+{
+    width: 120px;
+    background-color: red;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.logo-footer img 
+{
+    max-width: 50%; 
+    height: auto;
+}
+
+.logo-footer img
+{
+    max-width: 8%; 
+    height: auto; 
+}
+
+/*footer*/
+
+footer
+{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff43;
+}
+
+footer .flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .line-footer
+{
+    padding: 20px 0;
+}
+
+.borda
+{
+    border-top: 2px solid red;
+}
+
+footer .line-footer p i
+{
+    color: red;
+    font-size: 22px;
+}
+
+footer .line-footer p a 
+{
+    color: #ffffffaf;
+}
+
+/*MUSICA*/
+
+.meus-projetos {
+    padding: 40px 4%;
+    background-color: #111;
+    color: white;
+}
+
+.meus-projetos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: rgba(255, 0, 0, 0.523);
+}
+
+thead th {
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #333;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tbody a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+tbody a:hover {
+    color: white;
+}
+
+tbody tr:hover 
+{
+    background-color: #333;
+}
+
+/* Seção Destaque Mixtape */
+.destaque-mixtape 
+{
+    padding: 60px 4%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.destaque-mixtape .titulo 
+{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Shlop', sans-serif;
+}
+
+.destaque-mixtape .titulo span
+{
+    font-family: 'Shlop', sans-serif;
+}
+
+.destaque-mixtape .flex 
+{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.mixtape-capa img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.mixtape-info h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: red;
+    font-family: 'Shlop', sans-serif;
+}
+
+.mixtape-info p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.btns-mixtape {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.btns-mixtape a button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btns-mixtape a button:hover {
+    background-color: #cc0000;
+    transform: scale(1.1);
+}
+
+/*projetos*/
+
+/* Página About */
+
+.about-intro {
+    padding: 60px 4%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+.about-intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-academics, .about-skills, .about-experience {
+    padding: 60px 4%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.about-academics h2, .about-skills h2, .about-experience h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: red;
+}
+
+
+.flexing 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+
+.academic-item, .skill-item, .experience-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    max-width: 300px; 
+    text-align: center;
+    flex: 1 1 300px; 
+}
+
+.academic-item h3, .skill-item h3, .experience-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.academic-item p, .skill-item p, .experience-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.skill-item i {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .about-intro h1 {
+        font-size: 28px;
+    }
+
+    .about-intro p {
+        font-size: 16px;
+    }
+
+    .about-academics h2, .about-skills h2, .about-experience h2 {
+        font-size: 28px;
+    }
+
+    .academic-item, .skill-item, .experience-item {
+        max-width: 100%; 
+        flex: 1 1 100%; 
+    }
+
+    .flex {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-intro h1 {
+        font-size: 24px;
+    }
+
+    .about-intro p {
+        font-size: 14px;
+    }
+
+    .academic-item h3, .skill-item h3, .experience-item h3 {
+        font-size: 20px;
+    }
+
+    .academic-item p, .skill-item p, .experience-item p {
+        font-size: 14px;
+    }
+
+    .skill-item i {
+        font-size: 28px;
+    }
+}
+
+.about-experience {
+    padding: 60px 4%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.about-experience h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: red;
+}
+
+.about-experience .interface {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.about-experience .experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    width: 100%;
+    max-width: 800px; 
+}
+
+.experience-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(78, 78, 78);
+    max-width: 300px; 
+    flex: 1 1 300px; 
+    text-align: center;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.experience-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
