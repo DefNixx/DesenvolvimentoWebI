@@ -515,33 +515,38 @@ tbody tr:hover
 
 /* Página About */
 
-.about-intro {
+.about-intro 
+{
     padding: 60px 4%;
     background-color: #111;
     color: white;
     text-align: center;
 }
 
-.about-intro h1 {
+.about-intro h1 
+{
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.about-intro p {
+.about-intro p 
+{
     font-size: 18px;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
-.about-academics, .about-skills, .about-experience {
+.about-academics, .about-skills, .about-experience 
+{
     padding: 60px 4%;
     background-color: #222;
     color: white;
     text-align: center;
 }
 
-.about-academics h2, .about-skills h2, .about-experience h2 {
+.about-academics h2, .about-skills h2, .about-experience h2 
+{
     margin-bottom: 40px;
     font-size: 32px;
     color: red;
@@ -584,53 +589,6 @@ tbody tr:hover
     font-size: 36px;
     color: red;
     margin-bottom: 10px;
-}
-
-
-@media (max-width: 768px) {
-    .about-intro h1 {
-        font-size: 28px;
-    }
-
-    .about-intro p {
-        font-size: 16px;
-    }
-
-    .about-academics h2, .about-skills h2, .about-experience h2 {
-        font-size: 28px;
-    }
-
-    .academic-item, .skill-item, .experience-item {
-        max-width: 100%; 
-        flex: 1 1 100%; 
-    }
-
-    .flex {
-        gap: 15px;
-    }
-}
-
-
-@media (max-width: 480px) {
-    .about-intro h1 {
-        font-size: 24px;
-    }
-
-    .about-intro p {
-        font-size: 14px;
-    }
-
-    .academic-item h3, .skill-item h3, .experience-item h3 {
-        font-size: 20px;
-    }
-
-    .academic-item p, .skill-item p, .experience-item p {
-        font-size: 14px;
-    }
-
-    .skill-item i {
-        font-size: 28px;
-    }
 }
 
 .about-experience {
